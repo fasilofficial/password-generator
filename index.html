@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./style.min.css" type="text/css">
+    <script src="./app.js" defer></script>
+</head>
+<body>
+    <h1>Password Generator</h1>
+    <div class="container">
+        <div class="box"><div class="password"></div><i id="copy" class="fa-regular fa-copy" aria-hidden="true"></i></div>
+        <div class="btn" id="btn-generate">Generate</div>
+        <form class="form">
+            <label for="password-length-number">Length</label>
+            <input type="number" name="pln" id="password-length-number" class="number-input" min="1" max="50" value="8">
+            <label for="lowercase">Small letters</label>
+            <input type="checkbox" name="lc" id="lowercase" checked>
+            <label for="lowercase">Capital letters</label>
+            <input type="checkbox" name="uc" id="uppercase">
+            <label for="lowercase">Numbers</label>
+            <input type="checkbox" name="num" id="numbers">
+            <label for="lowercase">Special characters</label>
+            <input type="checkbox" name="sym" id="symbols">
+        </form>
+    </div>
+</body>
+</html>
